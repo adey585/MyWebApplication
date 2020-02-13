@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2396d1ba-ef59-493d-91e6-c7e3ae3a73e2" name="Default Changelist" comment="" />
+    <list default="true" id="2396d1ba-ef59-493d-91e6-c7e3ae3a73e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/src/test/TestResult/ScreenShot/login_2020-02-13_155640.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/src/test/TestResult/ScreenShot/login_2020-02-13_160127.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/src/test/java/AccountFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/Application/src/test/java/AccountFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/target/test-classes/AccountFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/Application/target/test-classes/AccountFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/Base.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,13 +34,18 @@
     </option>
   </component>
   <component name="ProjectId" id="1Xdcgw50EJmr7S5PWtFom9jsZXB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -37,7 +54,18 @@
       <recent name="C:\Users\iamam\Desktop\BunceePract\Generic\src\main\driver" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/iamam/Desktop/BunceePract/Application/src/test/Resources/TestRunner.xml">
+    <configuration name="AccountFeature" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountFeature" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/iamam/Desktop/BunceePract/Application/src/test/Resources/TestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Application" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Application/src/test/Resources/TestRunner.xml" />
@@ -51,6 +79,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/iamam/Desktop/BunceePract/Application/src/test/Resources/TestRunner.xml" />
+        <item itemvalue="TestNG.AccountFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -67,26 +96,29 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom" timestamp="1581550275754">
+    <state width="1493" height="129" key="GridCell.Tab.0.bottom" timestamp="1581629010376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581550275754" />
+    <state width="1493" height="129" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581629010376" />
     <state width="1557" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-115.1600.1160@1920.-115.1600.1160" timestamp="1581384123242" />
-    <state width="1493" height="156" key="GridCell.Tab.0.center" timestamp="1581550275754">
+    <state width="1493" height="129" key="GridCell.Tab.0.center" timestamp="1581629010376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.center/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581550275754" />
+    <state width="1493" height="129" key="GridCell.Tab.0.center/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581629010376" />
     <state width="1557" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.-115.1600.1160@1920.-115.1600.1160" timestamp="1581384123242" />
-    <state width="1493" height="156" key="GridCell.Tab.0.left" timestamp="1581550275754">
+    <state width="1493" height="129" key="GridCell.Tab.0.left" timestamp="1581629010376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.left/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581550275754" />
+    <state width="1493" height="129" key="GridCell.Tab.0.left/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581629010376" />
     <state width="1557" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.-115.1600.1160@1920.-115.1600.1160" timestamp="1581384123242" />
-    <state width="1493" height="156" key="GridCell.Tab.0.right" timestamp="1581550275754">
+    <state width="1493" height="129" key="GridCell.Tab.0.right" timestamp="1581629010376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="156" key="GridCell.Tab.0.right/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581550275754" />
+    <state width="1493" height="129" key="GridCell.Tab.0.right/0.0.1536.824/1920.-115.1600.1160@0.0.1536.824" timestamp="1581629010376" />
     <state width="1557" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.-115.1600.1160@1920.-115.1600.1160" timestamp="1581384123242" />
     <state x="209" y="118" key="new project wizard" timestamp="1581380015380">
       <screen x="0" y="0" width="1536" height="824" />
