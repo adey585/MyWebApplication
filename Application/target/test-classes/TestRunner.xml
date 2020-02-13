@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Buncee App running on Chrome Browser">
+    
+    <parameter name="useSaucceLab" value="false"></parameter>
+    <parameter name="userName" value="adey"></parameter>
+    <parameter name="key" value=""></parameter>
+    <parameter name="appURL" value="https://app.edu.buncee.com/"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="80.0.3987.87"></parameter>
+
+    <test name="Home Page">
+
+        <classes>
+            <class name="AccountFeature"/>
+        </classes>
+
+    </test>
+
+</suite>
