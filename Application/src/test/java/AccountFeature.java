@@ -26,6 +26,7 @@ public class AccountFeature extends SubBase {
     public void logout() throws InterruptedException {
         loginToAccount();
         logoutFromAccount();
+        System.out.println("Committing and pushing newly added test cases to git hub");
     }
 
 }
