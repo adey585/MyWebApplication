@@ -11,6 +11,8 @@ public class AccountPage {
     //Account Menu
     public static String profileLogoXPath = "//*[@id=\"header-profile-image\"]";
     public static String logoutButtonXPath = "//*[@id=\"reactjs-dashboard-generic\"]/div/div[1]/div[3]/div[4]/a[10]/div";
+
+    //Adding new line to github
 }
 
 
