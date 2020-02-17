@@ -89,19 +89,16 @@ public class Base {
     }
 
     public void takeTheScreenshot(String testCaseName) throws Exception {
-        Thread.sleep(3000);
-        String screenShotLocation = "C:\\Users\\iamam\\Dropbox\\BunceePract\\Application\\src\\test\\TestResult\\ScreenShot\\";
+        String screenshotLocation = "C:\\Users\\iamam\\Dropbox\\BunceePract\\Application\\src\\test\\TestResult\\ScreenShot\\";
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HHmmss");
         Date date = new Date();
-        String currentTime = dateFormat.format(date); //2016/11/16 12:08:43
-        System.out.println("---------------------"+currentTime);
+        String currentTime = dateFormat.format(date);
+        System.out.println("---------------------------"+currentTime);
 
-        TakesScreenshot scrShot =((TakesScreenshot)driver);
-        File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-        File DestFile = new File(screenShotLocation + testCaseName + "_" + currentTime + ".png");
-//        File DestFile = new File(screenShotLocation);
-
-        FileUtils.copyFile(SrcFile, DestFile);
+        TakesScreenshot screenshot = ((TakesScreenshot)driver);
+        File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
+        File destFile = new File(screenshotLocation + testCaseName + "-" + currentTime + ".png");
+        FileUtils.copyFile(srcFile, destFile);
     }
 
 }
