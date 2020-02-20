@@ -8,6 +8,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -15,6 +17,7 @@ import org.testng.annotations.Parameters;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -32,7 +35,7 @@ public class Base {
     public void setUp(boolean useSaucceLab, String userName, String key, String appURL, String os, String browserName, String browserVersion)
     throws IOException {
         if (useSaucceLab == true) {
-            //getSauceLabDriver(userName, key, os, browserName,browserVersion);
+            getSauceLabDriver(userName, key, os, browserName, browserVersion);
         } else {
             getLocalDriver(os, browserName);
         }
@@ -40,6 +43,23 @@ public class Base {
         driver.navigate().to(appURL);
         driver.manage().window().maximize();
         log.info("Browser Loaded with App");
+    }
+
+    //get cloud driver
+    public WebDriver getSauceLabDriver(String userName, String key, String os, String browserName, String browserVersion)
+    throws IOException {
+
+        DesiredCapabilities cap = new DesiredCapabilities();
+        cap.setCapability("platform", os);
+        cap.setBrowserName(browserName);
+        cap.setCapability("version", browserVersion);
+        cap.setCapability("name", "BunceeTest1");
+        cap.setCapability("extendedDebugging", "true");
+
+        driver = new RemoteWebDriver(new URL("http://" + userName + ":" + key +
+                "@ondemand.saucelabs.com:80/wd/hub"), cap);
+
+        return driver;
     }
 
     //Get Local Driver
@@ -63,7 +83,7 @@ public class Base {
         driver.quit();
     }
 
-    public void clickByXpath(String xpath) throws InterruptedException{
+    public void clickByXpath(String xpath) throws InterruptedException {
         Thread.sleep(2000);
         driver.findElement(By.xpath(xpath)).click();
     }
@@ -88,17 +108,18 @@ public class Base {
         return value;
     }
 
-    public void takeTheScreenshot(String testCaseName) throws Exception {
+        public void takeTheScreenshot(String testCaseName) throws Exception {
+        Thread.sleep(2000);
         String screenshotLocation = "C:\\Users\\iamam\\Dropbox\\BunceePract\\Application\\src\\test\\TestResult\\ScreenShot\\";
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HHmmss");
         Date date = new Date();
         String currentTime = dateFormat.format(date);
-        System.out.println("---------------------------"+currentTime);
+        System.out.println("--------------------------"+currentTime);
 
         TakesScreenshot screenshot = ((TakesScreenshot)driver);
         File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
         File destFile = new File(screenshotLocation + testCaseName + "-" + currentTime + ".png");
         FileUtils.copyFile(srcFile, destFile);
-    }
+        }
 
 }

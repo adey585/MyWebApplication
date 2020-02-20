@@ -3,12 +3,12 @@
 <suite name="Buncee App running on Chrome Browser">
     
     <parameter name="useSaucceLab" value="false"></parameter>
-    <parameter name="userName" value="adey"></parameter>
-    <parameter name="key" value=""></parameter>
+    <parameter name="userName" value="adey312"></parameter>
+    <parameter name="key" value="68642471-c008-49d6-bd4e-46eef3243231"></parameter>
     <parameter name="appURL" value="https://app.edu.buncee.com/"></parameter>
     <parameter name="os" value="windows"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="browserVersion" value="80.0.3987.87"></parameter>
+    <parameter name="browserVersion" value="80"></parameter>
 
     <test name="Home Page">
 
