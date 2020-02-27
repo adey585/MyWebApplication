@@ -48,16 +48,16 @@ public class Base {
     //get cloud driver
     public WebDriver getSauceLabDriver(String userName, String key, String os, String browserName, String browserVersion)
     throws IOException {
-
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("platform", os);
         cap.setBrowserName(browserName);
         cap.setCapability("version", browserVersion);
-        cap.setCapability("name", "BunceeTest1");
+        cap.setCapability("name", "BunceeTest3");
         cap.setCapability("extendedDebugging", "true");
 
         driver = new RemoteWebDriver(new URL("http://" + userName + ":" + key +
                 "@ondemand.saucelabs.com:80/wd/hub"), cap);
+
 
         return driver;
     }
@@ -108,18 +108,20 @@ public class Base {
         return value;
     }
 
-        public void takeTheScreenshot(String testCaseName) throws Exception {
+    public void takeScreenshot(String testCaseName) throws Exception {
         Thread.sleep(2000);
         String screenshotLocation = "C:\\Users\\iamam\\Dropbox\\BunceePract\\Application\\src\\test\\TestResult\\ScreenShot\\";
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HHmmss");
         Date date = new Date();
         String currentTime = dateFormat.format(date);
-        System.out.println("--------------------------"+currentTime);
+        System.out.println("----------------------------"+currentTime);
 
-        TakesScreenshot screenshot = ((TakesScreenshot)driver);
+        TakesScreenshot screenshot = (TakesScreenshot)driver;
         File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
-        File destFile = new File(screenshotLocation + testCaseName + "-" + currentTime + ".png");
+        File destFile = new File(screenshotLocation + testCaseName + "_" + currentTime + ".png");
         FileUtils.copyFile(srcFile, destFile);
-        }
+    }
 
 }
+
+//Adding all the final changes 

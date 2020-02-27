@@ -1,5 +1,4 @@
 import pageobject.AccountPage;
-
 import java.io.IOException;
 
 public class SubBase extends Base {
